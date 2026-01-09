@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucks Cabaret Menu</title>
 
+    <style>
+
+		body {
+  		margin: 0;
+		}
+
+		/* NAV BAR */
+		.navbar {
+  		background-color: black;
+  		padding: 10px 20px;
+		}
+
+		.nav-list {
+  		list-style: none;
+  		margin: 0;
+  		padding: 0;
+  		display: flex;
+		}
+
+		.nav-list li {
+  		margin-right: 10px;
+		}
+
+		.nav-list a {
+  		color: white;
+  		text-decoration: none;
+ 		padding: 10px 15px;
+  		display: block;
+  		font-size: 16px;
+		}
+
+		.nav-list a:hover {
+  		background-color: #333;
+		}
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+        body {
+            font-family: Cormorant Garamond, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 8px 20px;
+            background: #000000;
+            color: black;
+	    font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .menu-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: #ddd;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #2BAA59;
+            padding-bottom: 5px;
+        }
+
+        .specials-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .specials-list li {
+            background: #fff;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid #2BAA59;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+	<nav class="navbar">
+  		<ul class="nav-list">
+    	<li><a href="/">Home</a></li>
+    	<li><a href="/menu/">Menu</a></li>
+    	<li><a href="/events/">Events</a></li>
+  		</ul>
+	</nav>
+<header>
+    <img src="bucks-logo2.jpg" alt="Bucks Cabaret Logo" class="logo-image">
+</header>
+
+<div class="container">
+
+	<h2 style="margin-bottom:15px;">Monthly Events</h2>
+	
+	<img src="jan1.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="feb1.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="feb2.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="feb3.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="mar1.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="mar2.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="mar3.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="apr1.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="apr2.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="apr3.jpg" alt="Menu Image" class="menu-image" />
+	
+	<img src="may1.jpg" alt="Menu Image" class="menu-image" />
+
+	<img src="may2.jpg" alt="Menu Image" class="menu-image" />
+
+	<img src="may3.jpg" alt="Menu Image" class="menu-image" />
+	
+
+</div>
+
+<footer>
+    © 2026 Bucks Cabaret. All rights reserved.
+    <!-- You can add hours, address, or contact info here -->
+</footer>
+
+<script>
+  function toggleDropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+  }
+
+  // Close dropdown if user clicks outside
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdown = document.getElementById("dropdownMenu");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  }
+</script>
+	
+</body>
+</html>
