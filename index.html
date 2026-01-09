@@ -187,8 +187,25 @@
     <!-- You can add hours, address, or contact info here -->
 </footer>
 
+<script>
+  function toggleDropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+  }
+
+  // Close dropdown if user clicks outside
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdown = document.getElementById("dropdownMenu");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  }
+</script>
+	
 </body>
 </html>
+
 
 
 
