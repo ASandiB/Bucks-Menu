@@ -7,9 +7,10 @@
 
     <style>
 
+		/* NAV BAR */
 		.navbar {
   		background-color: #222;
-  		padding: 10px 20px;
+ 		padding: 10px 20px;
 		}
 
 		.nav-list {
@@ -17,41 +18,48 @@
   		margin: 0;
   		padding: 0;
   		display: flex;
+  		align-items: center;
 		}
 
 		.nav-list li {
   		position: relative;
 		}
 
-		.nav-list a {
+		.nav-list a,
+		.dropbtn {
   		color: white;
-  		text-decoration: none;
+  		background: none;
+  		border: none;
+  		font-size: 16px;
   		padding: 10px 15px;
-  		display: block;
+  		cursor: pointer;
+  		text-decoration: none;
 		}
 
-		.nav-list a:hover {
+		.nav-list a:hover,
+		.dropbtn:hover {
   		background-color: #444;
 		}
 
-/* DROPDOWN */
+		/* DROPDOWN */
 		.dropdown-content {
- 		display: none;
- 		position: absolute;
- 		background-color: #333;
-  		min-width: 150px;
+  		display: none;
+  		position: absolute;
   		top: 100%;
   		left: 0;
+  		background-color: #333;
+  		min-width: 150px;
   		z-index: 1000;
 		}
 
 		.dropdown-content li a {
   		padding: 10px;
+  		display: block;
 		}
 
-		/* Show dropdown on hover */
-		.dropdown:hover .dropdown-content {
- 		 display: block;
+		/* SHOW WHEN ACTIVE */
+		.dropdown-content.show {
+  		display: block;
 		}
 
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
@@ -114,21 +122,23 @@
 </head>
 
 <body>
+	<nav class="navbar">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
 
-<header>
-		<nav class="navbar">
-  	<ul class="nav-list">
-    	<li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">
+        Explore ▾
+      </button>
 
-    	<li class="dropdown">
-      	<a href="#" class="dropbtn">Explore ▾</a>
-     	 <ul class="dropdown-content">
-        	<li><a href="menu.html">Menu</a></li>
-        	<li><a href="events.html">Events</a></li>
-      	</ul>
-    	</li>
-  	</ul>
+      <ul id="dropdownMenu" class="dropdown-content">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </li>
+  </ul>
 	</nav>
+<header>
     <img src="bucks-logo2.jpg" alt="Bucks Cabaret Logo" class="logo-image">
 </header>
 
@@ -205,6 +215,7 @@
 	
 </body>
 </html>
+
 
 
 
