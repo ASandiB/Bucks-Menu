@@ -174,11 +174,21 @@
 	}
 	.intro-text {
   	max-width: 800px;
- 	margin: 50px auto;
+  	margin: 50px auto;
   	text-align: center;
   	font-size: 20px;
   	line-height: 1.6;
   	color: #000;
+  	padding: 0 20px; /* <-- Add horizontal padding */
+	}
+
+	/* Mobile tweak */
+	@media (max-width: 768px) {
+  	.intro-text {
+    font-size: 18px;    /* slightly smaller text */
+    padding: 0 15px;    /* more breathing room on small screens */
+    margin: 40px auto;  /* optional: reduce vertical margin */
+  	}
 	}
     </style>
 </head>
@@ -260,6 +270,7 @@
 	
 </body>
 </html>
+
 
 
 
