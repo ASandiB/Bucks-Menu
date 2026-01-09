@@ -156,11 +156,22 @@
 		}
 
 		/* Mobile */
-		@media (max-width: 768px) {
+	@media (max-width: 768px) {
   		.location-section {
-    	flex-direction: column;
+    		flex-direction: column;
+    		max-width: 100%;       /* allow full width */
+    		padding: 0;            /* remove side padding */
   		}
-		}
+
+  		.location-info {
+    		width: 100%;           /* stretch Visit Us container */
+    		margin-bottom: 20px;   /* optional spacing under text */
+  		}
+
+  		.location-map {
+    		width: 100%;           /* stretch map to full width */
+  		}
+}
     </style>
 </head>
 
@@ -234,6 +245,7 @@
 	
 </body>
 </html>
+
 
 
 
