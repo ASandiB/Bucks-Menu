@@ -96,6 +96,57 @@
             padding: 20px;
             color: #666;
         }
+
+		.specials-list ul {
+    		list-style: none;
+    		padding: 0;
+		}
+
+		.special-item {
+    		display: flex;
+    		justify-content: space-between;
+    		padding: 6px 0;
+		}
+
+		.price {
+    		font-weight: bold;
+		}
+		.specials {
+		max-width: 700px;
+		margin: auto;
+		font-family: Arial, sans-serif;
+		}
+
+		.day {
+		margin-bottom: 25px;
+		}
+
+		.day h3 {
+		border-bottom: 2px solid #ddd;
+		padding-bottom: 5px;
+		margin-bottom: 10px;
+		}
+
+		.menu-item {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px dotted #aaa;
+		padding: 6px 0;
+		}
+
+		.item-name {
+		max-width: 75%;
+		}
+
+		.price {
+		font-weight: bold;
+		}
+
+		.menu-note {
+		font-size: 14px;
+		color: #555;
+		margin-top: 4px;
+		}
     </style>
 </head>
 
@@ -117,18 +168,97 @@
     <img src="bucksmenu2.jpg" alt="Menu Image" class="menu-image" />
 
     <!-- SPECIALS SECTION -->
-    <h2>Weekly Specials</h2>
-    <div class="specials-list">
-        <ul>
-            <li><strong>Monday</strong> 8oz Strip Steak with green peppercorn sauce, mashed potatoes and veggies</li>
-            <li><strong>Tuesday</strong> Fajitas</li>
-            <li><strong>Wednesday</strong> Soup and choice of Philadelphia Cheesesteak or Italian Sub</li>
-            <li><strong>Thursday</strong> Steak and Lobster</li>
-            <li><strong>Friday</strong> Chicken Fried Steak</li>
-            <li><strong>Saturday and Sunday</strong> Flatbread Pizza/Burger and Fries/Wings and Fries</li>
-        </ul>
-    </div>
+    <div class="specials">
 
+		<h2>Weekly Specials</h2>
+
+		<!-- MONDAY -->
+		<div class="day">
+			<h3>Monday</h3>
+
+				<div class="menu-item">
+				<span class="item-name">Chicken Cordon Bleu</span>
+				<span class="price">$14</span>
+				</div>
+
+		</div>
+
+
+		<!-- TUESDAY -->
+		<div class="day">
+			<h3>Tuesday</h3>
+
+				<div class="menu-item">
+				<span class="item-name">Taco Tuesday</span>
+				</div>
+
+		<div class="menu-item">
+			<span class="item-name">NY Steak Dinner (Buy 1 Get 1 Free)</span>
+			<span class="price">$14</span>
+		</div>
+
+		<div class="menu-note">4PM – 8PM</div>
+
+		</div>
+
+
+		<!-- WEDNESDAY -->
+		<div class="day">
+		<h3>Wednesday</h3>
+
+			<div class="menu-item">
+			<span class="item-name">Philadelphia Cheesesteak or Italian Sub with Side of Soup</span>
+			<span class="price">$14</span>
+			</div>
+
+		</div>
+
+
+		<!-- THURSDAY -->
+		<div class="day">
+		<h3>Thursday</h3>
+
+			<div class="menu-item">
+			<span class="item-name">Steak & Lobster</span>
+			<span class="price">$10</span>
+			</div>
+
+		</div>
+
+
+		<!-- FRIDAY -->
+		<div class="day">
+			<h3>Friday</h3>
+
+			<div class="menu-item">
+			<span class="item-name">Jackie Special (Chicken over creamy sauce, rice, pico, avocado)</span>
+			</div>
+
+		</div>
+
+
+		<!-- WEEKEND -->
+		<div class="day">
+		<h3>Saturday & Sunday</h3>
+
+			<div class="menu-item">
+			<span class="item-name">BBQ Brisket Sandwich with Fries</span>
+			<span class="price">$14</span>
+			</div>
+
+			<div class="menu-item">
+			<span class="item-name">BBQ Rib Plate with Fries & Texas Toast</span>
+			<span class="price">$14</span>
+			</div>
+
+			<div class="menu-item">
+			<span class="item-name">BBQ Beef Brisket & Rib Combo with Fries & Texas Toast</span>
+			<span class="price">$20</span>
+			</div>
+
+		</div>
+
+	</div>
 </div>
 
 <footer>
